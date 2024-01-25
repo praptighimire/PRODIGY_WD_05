@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff7f7;
+    background-image: url('Green\ Minimalist\ Plants\ March\ Calendar\ Desktop\ Wallpaper.png');
+   
+    font-size: 120%;
+  }
+  
+  .card {
+    background: #68c5a088;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border:solid rgba(0, 0, 0, 0.25);
+    border-width: 2px;
+    height: 48px;
+    width: 48px;
+    outline: none;
+    background: #7c7c7c1e;
+    color: black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: solid rgba(0,0,0, 0.25);
+    border-width: 2px;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 25px;
+    background: #e7edeb1e;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  ::placeholder{
+    color:rgb(0, 0, 0,0.5);
+  }
+  button:hover {
+    background: #ffffff6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
